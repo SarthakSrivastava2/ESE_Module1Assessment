@@ -25,7 +25,7 @@
 /* Size of the Data Set */
 #define SIZE (40)
 
-int find_mean(int arr[], int len)
+int find_mean(unsigned char arr[], int len)
 {
     int sum = 0;
     for (int i = 0; i < len; i++)
@@ -35,7 +35,7 @@ int find_mean(int arr[], int len)
     return sum / len;
 }
 
-int find_median(int arr[], int len)
+int find_median(unsigned char arr[], int len)
 {
     if (len % 2 == 0)
     {
@@ -47,7 +47,7 @@ int find_median(int arr[], int len)
     }
 }
 
-int find_maximum(int arr[], int len)
+int find_maximum(unsigned char arr[], int len)
 {
     int max = arr[0];
     for (int i = 1; i < len; i++)
@@ -60,7 +60,7 @@ int find_maximum(int arr[], int len)
     return max;
 }
 
-int find_minimum(int arr[], int len)
+int find_minimum(unsigned char arr[], int len)
 {
     int min = arr[0];
     for (int i = 1; i < len; i++)
@@ -73,7 +73,7 @@ int find_minimum(int arr[], int len)
     return min;
 }
 
-int *sort_array(int arr[], int len)
+unsigned char *sort_array(unsigned char arr[], int len)
 {
     int temp;
     for (int i = 0; i < len; i++)
@@ -117,7 +117,7 @@ void main()
     int max = find_maximum(test, len);
     int min = find_minimum(test, len);
 
-    int *sorted = sort_array(test, len);
+    unsigned char *sorted = sort_array(test, len);
     int med = find_median(sorted, len);
 
     print_statistics(max, min, mean, med);

@@ -66,7 +66,7 @@ void print_statistics(int max, int min, int mean, int median);
  * @param len The length of the array.
  * @return The number of elements printed.
  */
-int print_array(int arr[], int len);
+int print_array(unsigned char arr[], int len);
 
 /**
  * @brief Finds the median of the data set.
@@ -77,7 +77,7 @@ int print_array(int arr[], int len);
  * @param len The length of the array.
  * @return The median value of the array.
  */
-int find_median(int arr[], int len);
+int find_median(unsigned char arr[], int len);
 
 /**
  * @brief Finds the mean of the data set.
@@ -88,7 +88,7 @@ int find_median(int arr[], int len);
  * @param len The length of the array.
  * @return The mean value of the array.
  */
-int find_mean(int arr[], int len);
+int find_mean(unsigned char arr[], int len);
 
 /**
  * @brief Finds the maximum value in the data set.
@@ -99,7 +99,7 @@ int find_mean(int arr[], int len);
  * @param len The length of the array.
  * @return The maximum value in the array.
  */
-int find_maximum(int arr[], int len);
+int find_maximum(unsigned char arr[], int len);
 
 /**
  * @brief Finds the minimum value in the data set.
@@ -110,7 +110,7 @@ int find_maximum(int arr[], int len);
  * @param len The length of the array.
  * @return The minimum value in the array.
  */
-int find_minimum(int arr[], int len);
+int find_minimum(unsigned char arr[], int len);
 
 /**
  * @brief Sorts the array in ascending order.
@@ -121,4 +121,4 @@ int find_minimum(int arr[], int len);
  * @param len The length of the array.
  * @return A pointer to the sorted array.
  */
-int* sort_array(int arr[], int len);
+unsigned char* sort_array(unsigned char arr[], int len);
